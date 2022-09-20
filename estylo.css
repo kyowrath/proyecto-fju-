@@ -18,12 +18,29 @@
   box-sizing: border-box;
   vertical-align: baseline;
   }
+  .mini{
+    transform: scale(0.7);
+    }
+    #cursor{
+      width:5em;
+      height:5em;
+      background-color: var(--blanco);
+      position:fixed;
+      top:0;
+      left:0;
+      z-index: 3;
+      pointer-events: none;
+      border-radius: 50%;
+      mix-blend-mode: difference;
+      }
   body {
     font-family: var(--fuente-principal);
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--negro);
     color: var(--blanco);
+    /* Ocultamos el cursor */
+     cursor: none;
     }
   img , figure {
   max-width: 100%;
